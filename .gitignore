@@ -1,0 +1,6 @@
+# Django migration files
+*/migrations/*.py
+*/migrations/*.pyc
+
+# Keep the migrations __init__.py file
+!*/migrations/__init__.py
