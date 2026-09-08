@@ -1,3 +1,4 @@
+import os
 from django.shortcuts import render
 from django.http import HttpResponse
 import datetime
@@ -6,4 +7,7 @@ import datetime
 def display(request):
     now = datetime.datetime.now()
     html = f"<html><body><h1>Hello, World!</h1><p>The current time is: {now}</p></body></html>"
+    # print(__file__) # print the file name
+    # print(os.path.abspath(__file__)) # print the file name with path
+    
     return HttpResponse(html)
